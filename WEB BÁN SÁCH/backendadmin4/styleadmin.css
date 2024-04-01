@@ -1,0 +1,402 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #4799c9;
+    color: #fff;
+    padding: 10px;
+}
+
+header .logo {
+    margin-right: 20px;
+}
+
+header nav {
+    flex: 1;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .user-info {
+    margin-left: auto;
+}
+
+header .user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main{
+    display:flex;
+}
+
+aside {
+    background-color: #b7d0ea;
+    width: 200px;
+    padding: 10px;
+    
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+aside ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+section.content {
+    flex: 1;
+    padding: 10px;
+}
+
+section.content h2 {
+    margin-top: 0;
+}
+
+section.content .card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.content .card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+section.content .card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+section.content .card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+section.content .card p {
+    margin-bottom: 5px;
+}
+.thong-ke {
+    margin-bottom: 20px;
+}
+
+.thong-ke ul {
+    list-style: none;
+    padding: 0;
+}
+
+.thong-ke ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.thong-ke ul li p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.thong-ke ul li span {
+    font-size: 18px;
+    font-weight: bold;
+}
+ 
+    
+.chuc-nang {
+    margin-bottom: 20px;
+}
+
+.chuc-nang ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.chuc-nang ul li {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 600px;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.chuc-nang ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.danh-muc {
+    margin-bottom: 20px;
+}
+
+.danh-muc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.danh-muc ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.danh-muc ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.san-pham {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.san-pham ul li {
+    width: 33.33%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.san-pham ul li img {
+    width: 100%;
+    height: 200px;
+}
+
+.san-pham ul li h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.san-pham ul li p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.san-pham ul li a {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+th {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.them-san-pham, .them-khuyen-mai, .them-tai-khoan {
+    margin-top: 20px;
+}
+
+.them-san-pham form, .them-khuyen-mai form, .them-tai-khoan form {
+    margin-bottom: 20px;
+}
+
+.them-san-pham form label, .them-khuyen-mai form label, .them-tai-khoan form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.them-san-pham form input, .them-khuyen-mai form input, .them-tai-khoan form input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.them-san-pham form select, .them-khuyen-mai form select, .them-tai-khoan form select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+}
+.them-san-pham form select:hover,.them-khuyen-mai form select:hover,.them-tai-khoan form select:hover {
+  border-color: #333;
+}
+
+.them-san-pham form select:focus,.them-khuyen-mai form select:focus,.them-tai-khoan form select:focus {
+  outline: none;
+  border-color: #000;
+}
+
+
+
+/*quản lý đơn hàng */
+.danh-sach-don-hang .trang-thai {
+    text-align: center;
+}
+
+.danh-sach-don-hang .trang-thai.cho-xac-nhan {
+    background-color: #f00;
+    color: white;
+}
+
+.danh-sach-don-hang .trang-thai.dang-giao-hang {
+    background-color: #ff0;
+    color: black;
+}
+
+.danh-sach-don-hang .trang-thai.da-hoan-thanh {
+    background-color: #0f0;
+    color: white;
+}
+
+/*quản lý khách hàng*/
+.danh-sach-khach-hang .thao-tac a {
+    margin-right: 10px;
+}
+
+/* quản lý khuyến mãi*/
+.danh-sach-khuyen-mai .loai-khuyen-mai {
+    text-align: center;
+}
+
+.danh-sach-khuyen-mai .loai-khuyen-mai.giam-gia {
+    background-color: #f00;
+    color: white;
+}
+
+.danh-sach-khuyen-mai .loai-khuyen-mai.mua-x-tang-y {
+    background-color: #ff0;
+    color: black;
+}
+
+.them-khuyen-mai .loai-khuyen-mai {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+.danh-sach-khuyen-mai table {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 5px;
+  }
+  
+  th, td {
+    grid-column: span 1;
+  }
+  
+  .them-khuyen-mai form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .them-khuyen-mai label {
+    grid-column: span 1;
+  }
+  
+  .them-khuyen-mai input,
+  .them-khuyen-mai select {
+    grid-column: span 2;
+  }
+  
+  .them-khuyen-mai button {
+    grid-column: span 2;
+  }
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    section {
+      width: 100%;
+    }
+  
+    .them-khuyen-mai form {
+      flex-direction: column;
+    }
+  
+    .them-khuyen-mai label,
+    .them-khuyen-mai input,
+    .them-khuyen-mai select,
+    .them-khuyen-mai button {
+      width: 100%;
+    }
+  }
+  
+/*quản lý thống kê*/
+.thong-ke-doanh-thu, .thong-ke-luot-truy-cap {
+    margin-bottom: 20px;
+}
+
+.thong-ke-doanh-thu table, .thong-ke-luot-truy-cap table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.thong-ke-doanh-thu th, .thong-ke-luot-truy-cap th, .thong-ke-doanh-thu td, .thong-ke-luot-truy-cap td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.thong-ke-doanh-thu th, .thong-ke-luot-truy-cap th {
+    text-align: center;
+}
+
+/*quản lý tài khoản */
+.danh-sach-tai-khoan .quyen-han {
+    text-align: center;
+}
+
+.danh-sach-tai-khoan .quyen-han.quan-tri-vien {
+    background-color: #f00;
+    color: white;
+}
+
+.danh-sach-tai-khoan .quyen-han.nhan-vien {
+    background-color: #ff0;
+    color: black;
+}
+
+.them-tai-khoan .quyen-han {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+main .fix {
+    margin-left: 20px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản trị web bán sách</title>
+    <link rel="stylesheet" href="styleadmin.css">
+    <style>
+        main .conten {
+    width: 770px;
+        }
+    </style> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="https://cdn1.iconfinder.com/data/icons/science-and-education-2/44/open_book-512.png" width="80" alt="Logo">
+        </div>
+        <nav>
+           <h1>Quản lý khuyến mãi</h1> 
+        </nav>
+        <div class="user-info">
+            <span>Xin chào, [ADMIN]</span>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href="quanlysp.html">Quản lý sản phẩm</a></li>
+                <li><a href="quanlydonhang.html">Quản lý đơn hàng</a></li>
+                <li><a href="quanlykhachhang.html">Quản lý khách hàng</a></li>
+                <li><a href="quanlykhuyenmai.html">Quản lý khuyến mãi</a></li>
+                <li><a href="quanlythongke.html">Quản lý thống kê</a></li>
+                <li><a href="quanlytaikhoan.html">Quản lý tài khoản</a></li>
+            </ul>
+            </aside>
+            <div class="fix">
+            <section class="danh-sach-khuyen-mai">
+                <h3>Danh sách chương trình khuyến mãi</h3>
+                <table border="1">
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên chương trình</th>
+                        <th>Loại khuyến mãi</th>
+                        <th>Mức giảm giá</th>
+                        <th>Thời gian bắt đầu</th>
+                        <th>Thời gian kết thúc</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Khuyến mãi 10% cho sách văn học</td>
+                        <td>Giảm giá theo phần trăm</td>
+                        <td>10%</td>
+                        <td>2023-11-16</td>
+                        <td>2023-11-30</td>
+                        <td>Kích hoạt</td>
+                        <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mua 2 tặng 1 sách kỹ năng</td>
+                        <td>Mua X tặng Y</td>
+                        <td>1</td>
+                        <td>2023-12-01</td>
+                        <td>2023-12-15</td>
+                        <td>Chưa kích hoạt</td>
+                        <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="them-khuyen-mai">
+                <h3>Thêm chương trình khuyến mãi</h3>
+                <form action="#">
+                    <label for="ten-khuyen-mai">Tên chương trình:</label>
+                    <input type="text" id="ten-khuyen-mai" name="ten-khuyen-mai">
+                    <label for="loai-khuyen-mai">Loại khuyến mãi:</label>
+                    <select id="loai-khuyen-mai" name="loai-khuyen-mai">
+                        <option value="1">Giảm giá theo phần trăm</option>
+                        <option value="2">Mua X tặng Y</option>
+                    </select>
+                    <label for="muc-giam-gia">Mức giảm giá:</label>
+                    <input type="number" id="muc-giam-gia" name="muc-giam-gia">
+                    <label for="thoi-gian-bat-dau">Thời gian bắt đầu:</label>
+                    <input type="date" id="thoi-gian-bat-dau" name="thoi-gian-bat-dau">
+                    <label for="thoi-gian-ket-thuc">Thời gian kết thúc:</label>
+                    <input type="date" id="thoi-gian-ket-thuc" name="thoi-gian-ket-thuc">
+                    <button type="submit">Thêm chương trình khuyến mãi</button>
+                </form>
+            </section>
+       </div>
+
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

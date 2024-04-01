@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản trị web bán sách</title>
+    <link rel="stylesheet" href="styleadmin.css">
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="https://cdn1.iconfinder.com/data/icons/science-and-education-2/44/open_book-512.png" width="80" alt="Logo">
+        </div>
+        <nav>
+           <h1>Quản lý sản phẩm</h1> 
+        </nav>
+        <div class="user-info">
+            <span>Xin chào, [ADMIN]</span>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href="quanlysp.html">Quản lý sản phẩm</a></li>
+                <li><a href="quanlydonhang.html">Quản lý đơn hàng</a></li>
+                <li><a href="quanlykhachhang.html">Quản lý khách hàng</a></li>
+                <li><a href="quanlykhuyenmai.html">Quản lý khuyến mãi</a></li>
+                <li><a href="quanlythongke.html">Quản lý thống kê</a></li>
+                <li><a href="quanlytaikhoan.html">Quản lý tài khoản</a></li>
+            </ul>
+        </aside>
+        <div class="fix">
+            <section class="danh-muc">
+                <h3>Danh mục sản phẩm</h3>
+                <ul>
+                    <li><a href="#">Sách văn học</a></li>
+                    <li><a href="#">Sách kinh tế</a></li>
+                    <li><a href="#">Sách kỹ năng</a></li>
+                    <li><a href="#">Sách thiếu nhi</a></li>
+                </ul>
+            </section>
+            <section class="san-pham">
+                <h3>Sản phẩm</h3>
+                <table border="1">
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Hình ảnh</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tên sách 1</td>
+                        <td><img src="images/sach1.jpg" alt="Sách 1"></td>
+                        <td>100.000 VNĐ</td>
+                        <td>10</td>
+                        <td>Còn hàng</td>
+                        <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tên sách 2</td>
+                        <td><img src="images/sach2.jpg" alt="Sách 2"></td>
+                        <td>150.000 VNĐ</td>
+                        <td>20</td>
+                        <td>Hết hàng</td>
+                        <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="them-san-pham">
+                <h2>Thêm sản phẩm</h2>
+                <form action="#">
+                    <label for="ten-san-pham">Tên sản phẩm:</label>
+                    <input type="text" id="ten-san-pham" name="ten-san-pham">
+                    <label for="hinh-anh">Hình ảnh:</label>
+                    <input type="file" id="hinh-anh" name="hinh-anh">
+                    <label for="gia">Giá:</label>
+                    <input type="number" id="gia" name="gia">
+                    <label for="so-luong">Số lượng:</label>
+                    <input type="number" id="so-luong" name="so-luong">
+                    <label for="trang-thai">Trạng thái:</label>
+                    <select id="trang-thai" name="trang-thai">
+                        <option value="1">Còn hàng</option>
+                        <option value="0">Hết hàng</option>
+                    </select>
+                    <button type="submit">Thêm sản phẩm</button>
+                </form>
+            </section>
+          </div>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản trị web bán sách</title>
+    <link rel="stylesheet" href="styleadmin.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="https://cdn1.iconfinder.com/data/icons/science-and-education-2/44/open_book-512.png" width="80" alt="Logo">
+        </div>
+        <nav>
+           <h1>Quản lý tài khoản</h1> 
+        </nav>
+        <div class="user-info">
+            <span>Xin chào, [ADMIN]</span>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href="quanlysp.html">Quản lý sản phẩm</a></li>
+                <li><a href="quanlydonhang.html">Quản lý đơn hàng</a></li>
+                <li><a href="quanlykhachhang.html">Quản lý khách hàng</a></li>
+                <li><a href="quanlykhuyenmai.html">Quản lý khuyến mãi</a></li>
+                <li><a href="quanlythongke.html">Quản lý thống kê</a></li>
+                <li><a href="quanlytaikhoan.html">Quản lý tài khoản</a></li>
+            </ul>
+            </aside>
+            <div class="fix">
+            <section class="danh-sach-tai-khoan">
+                <h3><center>Danh sách tài khoản</h3>
+                <table border="1">
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên tài khoản</th>
+                        <th>Quyền hạn</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>admin</td>
+                        <td>Quản trị viên</td>
+                        <td>Kích hoạt</td>
+                        <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>nhanvien</td>
+                        <td>Nhân viên</td>
+                        <td>Kích hoạt</td>
+                        <td><a href="#">Sửa</a> | <a href="#">Xóa</a></td>
+                    </tr>
+                </table>
+            </section>
+            
+            <section class="them-tai-khoan">
+                <h3><center>Thêm tài khoản</center></h3>
+                <form action="#">
+                    <label for="ten-tai-khoan">Tên tài khoản:</label>
+                    <input type="text" id="ten-tai-khoan" name="ten-tai-khoan">
+                    <label for="mat-khau">Mật khẩu:</label>
+                    <input type="password" id="mat-khau" name="mat-khau">
+                    <label for="quyen-han">Quyền hạn:</label>
+                    <select id="quyen-han" name="quyen-han">
+                        <option value="1">Quản trị viên</option>
+                        <option value="2">Nhân viên</option>
+                    </select>
+                    <button type="submit">Thêm tài khoản</button>
+                </form>
+            </section>
+       </div>
+
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

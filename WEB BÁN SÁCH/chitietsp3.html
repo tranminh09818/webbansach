@@ -1,0 +1,261 @@
+<!--Trang chi tiết 1 sản phẩm " thơ và đời "-->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3s4Wz6iJgD/+ub2oU" crossorigin="anonymous">
+  <title>Trang chi tiết sản phẩm "Thơ và đời"</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+.product-detail {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.product-image {
+  flex-basis: 30%;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  flex-basis: 70%;
+  padding: 1rem;
+}
+
+.product-info h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.product-info p {
+  margin-bottom: 10px;
+}
+
+.product-info .price {
+  font-weight: bold;
+}
+
+.product-info form {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.product-info input[type="number"] {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.product-info button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+          <img src="https://cdn1.iconfinder.com/data/icons/science-and-education-2/44/open_book-512.png" width="97x" class="d-inline-block align-top" alt="Logo">
+      </div>
+      
+        <nav class="navbar navbar-expand-md navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link mr-2" href="trangchu1.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mr-2" href="#">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mr-2" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mr-2" href="#">Liên hệ</a>
+              </li>
+            </ul>
+        </nav>
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Tìm kiếm sản phẩm">
+                <button type="submit" id="search-button">Tìm kiếm <i class="fa fa-search"></i></button>
+      </div>
+      <div class="cardd">
+        <img src="https://png2.cleanpng.com/sh/018325ef7137dd5e869f3c2c2a5973f6/L0KzQYq3VcE0N6VvgZH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TgNpd6F1gdDwLXPkgsW0kBNidJJnhNc2dnXmhLF5TfdzaaFtReVxb4DzebBuTfNieqUyi99qbHywg8fuTgBvb15ue9H3LXb1dba0hP94dp10edY2NXPncYSAhfFmOGI9TqI3OUC6R4K4U8UyPWY8UKIAMEO3SYKAWb5xdpg=/kisspng-computer-icons-shopping-cart-scalable-vector-graph-shopping-cart-small-svg-png-icon-free-download-5cda37eae01860.9077113515578050349179.png" width="35px" alt="card">
+      </div>
+        
+      </div>
+    </div>
+     <script>
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
+
+searchForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const searchTerm = searchInput.value.trim();
+
+  if (searchTerm) {
+    // Thực hiện tìm kiếm sản phẩm với từ khóa đã nhập
+    const matchingProducts = []; // thực hiện tìm kiếm và lưu trữ sản phẩm phù hợp vào mảng này
+    displaySearchResults(matchingProducts); // hiển thị kết quả tìm kiếm
+  }
+});
+    </script>
+  </header>
+  <main>
+    <div class="container">
+      <div class="product-detail">
+        <div class="product-image">
+          <img src="http://thcsphucuong.daitu.edu.vn/upload/48659/fck/files/xuan-quynh-1_u5387_d20170710_t161917_413652.jpg"alt="Năng Lực Chữa Lành Của Tâm">
+        </div>
+        <div class="product-info">
+          <h1>Xuân Quỳnh: thơ và đời</h1>
+          <p class="author">Tác giả: Xuân Quỳnh</p>
+          <p class="price">Giá: 90.000đ</p>
+          <p class="description">
+            Cuốn sách "Xuân Quỳnh: thơ và đời" là một cuốn sách tóm tắt về cuộc đời và tác phẩm của nhà thơ nổi tiếng Việt Nam - Xuân Quỳnh, giúp độc giả hiểu rõ hơn về tác giả và tác phẩm của bà.
+          </p>
+          <form action="/cart/add" method="post">
+            <input type="hidden" name="product_id" value="123">
+            <input type="number" name="quantity" value="1" min="1">
+            <button type="submit">Thêm vào giỏ hàng</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+    <script>
+        // Thêm chức năng cho nút "Thêm vào giỏ hàng"
+
+const addToCartButton = document.querySelector('.product-info button');
+
+addToCartButton.addEventListener('click', function(event) {
+  event.preventDefault();
+
+  // Gửi yêu cầu AJAX đến server để thêm sản phẩm vào giỏ hàng
+
+  const productId = document.querySelector('.product-info input[type="hidden"]').value;
+  const quantity = document.querySelector('.product-info input[type="number"]').value;
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', '/cart/add');
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.send(`product_id=<span class="math-inline">\{productId\}&quantity\=</span>{quantity}`);
+
+  // Hiển thị thông báo cho người dùng
+
+  alert('Sản phẩm đã được thêm vào giỏ hàng!');
+
+  // Chuyển hướng đến trang giỏ hàng
+
+  window.location.href = '/cart';
+});
+
+    </script>
+    
+        <p> 
+            <div id="accordion-description" class="accordion-item">
+                <a id="accordion-description-label" class="accordion-title plain active" aria-expanded="true" aria-controls="accordion-description-content" href="#accordion-item-description">
+                <button class="toggle" aria-label="Toggle"><i class="icon-angle-down"></i></button>
+                Mô tả </a>
+             
+         <div id="gioi-thieu">
+              <h2>Giới thiệu</h2>
+              <p>Cuốn sách "Xuân Quỳnh: Thơ và đời" được chia thành 4 chương:</p>
+              <ul>
+                <li>Chương 1: Tiểu sử và sự nghiệp của Xuân Quỳnh</li>
+                <li>Chương 2: Tác phẩm thơ tiêu biểu</li>
+                <li>Chương 3: Đánh giá về thơ Xuân Quỳnh</li>
+                <li>Chương 4: Tác phẩm khác</li>
+              </ul>
+            </div>
+            <div id="tac-pham-tieu-bieu">
+              <h2>Tác phẩm tiêu biểu</h2>
+              <p>Cuốn sách giới thiệu một số bài thơ tiêu biểu của Xuân Quỳnh, như:</p>
+              <ul>
+                <li>"Sóng"</li>
+                <li>"Tự hát"</li>
+                <li>"Vội vàng"</li>
+                <li>"Thuyền và biển"</li>
+                <li>"Mẹ"</li>
+                <li>"Luyến lưu"</li>
+                <li>"Bên kia sông Đuống"</li>
+                <li>"Giọt nước mắt"</li>
+                <li>"Sẽ còn có một ngày mai"</li>
+              </ul>
+            </div>
+            <div id="danh-gia">
+              <h2>Đánh giá</h2>
+              <p>Cuốn sách "Xuân Quỳnh: Thơ và đời" là một tài liệu hữu ích để nghiên cứu về cuộc đời và sự nghiệp của nhà thơ Xuân Quỳnh.</p>
+              <p>Cuốn sách giúp người đọc hiểu rõ hơn về phong cách thơ ca của Xuân Quỳnh, cũng như những đóng góp của bà cho nền thơ ca Việt Nam.</p>
+            </div>
+            <div id="tac-pham-khac">
+              <h2>Tác phẩm khác</h2>
+              <p>Ngoài thơ ca, Xuân Quỳnh còn sáng tác nhiều tác phẩm khác, như:</p>
+              <ul>
+                <li>Truyện thơ</li>
+                <li>Kịch thơ</li>
+                <li>Văn xuôi</li>
+              </ul>
+            </div>
+            </div>        
+        </p>  
+        <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3">
+                      <h3 class="footer-title">Về chúng tôi</h3>
+                      <p class="footer-content">Website bán sách được phát triển bởi sinh viên học viện Nông Nghiệp Việt Nam (VNUA)</p>
+                  </div>
+                  <div class="col-md-3">
+                      <h3 class="footer-title">Liên hệ</h3>
+                      <p>SV: <a>671688-TRẦN HOÀNG MINH HTTB</a></p>
+                      <p class="footer-content">Hotline: 12345678</p>
+                      <p>Email: <a href="mailto:khosach@booksweb.com">khosach@booksweb.com</a></p>
+                  </div>
+                  <div class="col-md-3">
+                      <h3 class="footer-title">Chính sách</h3>
+                      <p class="footer-content">
+                          
+                              <p>Chính sách bảo mật</p>
+                              <p>Chính sách vận chuyển</p>
+                              <p>Chính sách đổi trả</p>
+                          
+                      </p>
+                  </div>
+                  <div class="col-md-3">
+                      <h3 class="footer-title">Kết nối</h3>
+                          <li><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" width="25", height="20"><a href="https://www.facebook.com/profile.php?id=100042418221049&mibextid=LQQJ4d">Facebook</a></li>
+                          <li><img src="data:image/png;base64,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", height="20"><a href="https://twitter.com/home">X</a></li>
+                          <li><img src="data:image/png;base64,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" width="20", height="20"><a href="zalo.me/0353374156">Zalo</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>   
+</body>
+</html>

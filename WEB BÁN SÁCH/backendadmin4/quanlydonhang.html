@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản trị web bán sách</title>
+    <link rel="stylesheet" href="styleadmin.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="https://cdn1.iconfinder.com/data/icons/science-and-education-2/44/open_book-512.png" width="80" alt="Logo">
+        </div>
+        <nav>
+           <h1>Quản lý đơn hàng</h1> 
+        </nav>
+        <div class="user-info">
+            <span>Xin chào, [ADMIN]</span>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href="quanlysp.html">Quản lý sản phẩm</a></li>
+                <li><a href="quanlydonhang.html">Quản lý đơn hàng</a></li>
+                <li><a href="quanlykhachhang.html">Quản lý khách hàng</a></li>
+                <li><a href="quanlykhuyenmai.html">Quản lý khuyến mãi</a></li>
+                <li><a href="quanlythongke.html">Quản lý thống kê</a></li>
+                <li><a href="quanlytaikhoan.html">Quản lý tài khoản</a></li>
+            </ul>
+            </aside>
+            <div class="fix">
+            <section class="danh-sach-don-hang">
+                <center><h3>Danh sách đơn hàng</h3></center>
+                <table border="1">
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã đơn hàng</th>
+                        <th>Khách hàng</th>
+                        <th>Ngày đặt</th>
+                        <th>Tổng tiền</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>DH001</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>2023-11-16</td>
+                        <td>1.000.000 VNĐ</td>
+                        <td>Chờ xác nhận</td>
+                        <td><a href="#">Xem chi tiết</a> | <a href="#">Xử lý</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>DH002</td>
+                        <td>Trần Thị B</td>
+                        <td>2023-11-17</td>
+                        <td>2.000.000 VNĐ</td>
+                        <td>Đang giao hàng</td>
+                        <td><a href="#">Xem chi tiết</a></td>
+                    </tr>
+                </table>
+            </section>
+            </div>
+
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

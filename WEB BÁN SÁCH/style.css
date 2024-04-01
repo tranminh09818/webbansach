@@ -1,0 +1,273 @@
+body {
+    font-family: sans-serif;
+  }
+  /*phần đầu header*/
+ 
+  header {
+    background-color: #006eff;
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+
+.logo img {
+height: px;
+width: 85px;
+}
+.cardd {
+  margin-left: 100px;
+}
+  
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+}
+
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #333;
+}
+
+.search input[type="text"] {
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.search button {
+padding: 8px 15px;
+border: none;
+background-color: #1b56bd;
+color: #fff;
+
+}
+
+
+.col-md-4 .list-group {
+  width: 350px;
+}
+  
+  .product-detail {
+    display: flex;
+  }
+  
+  .product-image {
+    width: 300px;
+  }
+  
+    
+  .product-info {
+    padding: 147px;
+  }
+  
+  .product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-info .author, .product-info .price {
+    margin-bottom: 5px;
+  }
+  
+  .product-info .description {
+    margin-bottom: 20px;
+  }
+  
+  .product-info form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-info form input[type="number"] {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .product-info form button {
+    background-color: #333;
+    color: #ffffff;
+    
+  }
+  .description {
+    color: rgb(61, 169, 196) }
+    .accordion-title.active {
+      background-color: rgba(0, 0, 0, .03);
+      border-color: var(--fs-color-primary);
+      color: var(--fs-color-primary);
+      font-weight: 700;
+  }
+  a.plain {
+      transition: color .3s, opacity .3s, transform .3s;
+  }
+  .accordion-title {
+      display: block;
+      font-size: 110%;
+      padding: 0.6em 2.3em
+  }
+  .icon-angle-down:before {
+      content: "";
+  }
+
+.menu-list {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex: 1;
+margin-bottom: 0; 
+}
+
+.menu-list li {
+margin: 0 10px;
+}
+
+.menu-list li a {
+font-size: 16px;
+text-decoration: none;
+color: #333;
+transition: 0.3s;
+}
+
+.menu-list li a:hover {
+color: #000;
+}
+.pagination {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.pagination-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+}
+.page-item {
+margin: 0 5px;
+}
+.page-item a {
+display: block;
+padding: 5px 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+text-decoration: none;
+color: #333;
+transition: background-color 0.3s ease;
+}
+.page-item a:hover, .page-item.active a {
+background-color: #333;
+color: #fff;
+}
+.page-item.disabled a {
+color: #ccc;
+cursor: not-allowed;
+}
+/*phần ảnh trượt cho đều */
+.carousel-inner .carousel-item {
+height: 400px; 
+overflow: hidden;
+}
+
+.carousel-inner .carousel-item img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+min-height: 100%;
+width: auto;
+}
+/*chỉnh cho các ô sản phẩm đều nhau dùng display: flex*/
+.col-md-4 {
+display: flex;
+}
+@media only screen and (min-width: 600px) {
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+  }
+.product-image img {
+  height: 250px;
+  width: 200px;
+  object-fit: cover;
+}}
+footer{
+background-color: #ccc;
+}  
+/*css cho phần nút cuộn đến cuối trang web nó quay lại đầu trang*/
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#back-to-top:hover {
+  opacity: 0.8;
+}
+
+.visible {
+  display: block;
+}
+footer .footer-title {
+  
+  font-size: 24px;
+  
+}
+footer h3 {
+  margin-top: 20px;
+}
+/*nổi bật phầm tìm kiêms của header*/
+#search-form {
+  
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#search-input {
+  
+  height: 30px;
+  font-size: 16px;
+}
+
+#search-button {
+  background-color: #4c93af;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#cart {
+  font-size: 15px;
+  color: #fff;
+  background: #2693c9;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 1rem;
+  padding: 12px;
+  cursor: pointer;
+}
+
